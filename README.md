@@ -23,20 +23,19 @@ O projeto segue boas práticas modernas de segurança, com criptografia de senha
 ## 🧩 Estrutura do Projeto
 
 src/
-└── main/
-├── 📦 java/com/seguranca-springdev/
-│ ├── 🔐 config/ → Configurações de segurança e autenticação
-│ ├── 🚪 controller/ → Endpoints REST
-│ ├── 📤 dto/ → Objetos de transferência de dados (Request e Response)
-│ ├── 🧍 model/ → Entidades JPA (ex: Usuario)
-│ ├── 💾 repository/ → Interfaces de persistência
-│ ├── 🧠 service/ → Regras de negócio e autenticação
-│ └── 🧱 security/ → Filtros, tokens e classes auxiliares
+├── main/java/com/seguranca-springdev/
+│   ├── config/         → ⚙️  Configurações de segurança e autenticação
+│   ├── controller/     → 🌐  Endpoints REST (ex: AuthController, UserController)
+│   ├── dto/            → 📦  Objetos de Transferência de Dados (Request e Response)
+│   ├── model/          → 🧱  Entidades JPA (ex: Usuario, Perfil)
+│   ├── repository/     → 🗃️  Interfaces de persistência (Spring Data JPA)
+│   ├── service/        → 💡  Regras de negócio e autenticação
+│   └── security/       → 🔒  Filtros, tokens e classes auxiliares
 │
-└── 🗂️ resources/
-├── ⚙️ application.yml → Configurações do ambiente
-└── 🧬 db/migration/ → Scripts Flyway (criação de tabelas)
-
+├── main/resources/
+│   ├── application.yml → ⚙️  Configurações do ambiente
+│   └── db/migration/   → 🧬  Scripts Flyway (criação e versionamento de tabelas)
+│
 
 
 
